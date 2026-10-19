@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5f4">
+  <title>Bó hoa gửi nàng · 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="samples.css">
+</head>
+<body>
+  <audio id="backgroundMusic" autoplay loop preload="auto" aria-hidden="true">
+    <source src="./Nhacnen.mp3" type="audio/mpeg">
+  </audio>
+  <main class="card">
+    <button class="wish-card-trigger" id="wishOpen" type="button" aria-label="Mở thiệp lời chúc" aria-haspopup="dialog" aria-expanded="false">
+      <svg class="wish-card-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3.5" y="5.5" width="17" height="13" rx="2.8"></rect>
+        <path d="m4.5 7 7.5 5.8L19.5 7"></path>
+        <path class="wish-card-heart" d="M12 16.3s-3.2-1.8-3.2-3.9a1.8 1.8 0 0 1 3.2-1.1 1.8 1.8 0 0 1 3.2 1.1c0 2.1-3.2 3.9-3.2 3.9Z"></path>
+      </svg>
+      <span class="wish-card-label">Thiệp lời chúc</span>
+    </button>
+    <div class="topline"><span class="sparkle">✳</span> MỘT MÓN QUÀ NHỎ <span class="sparkle">✳</span></div>
+    <h1>Gửi nàng,<br><em>một ngày thật xinh.</em></h1>
+    <p class="intro">Chúc bạn luôn rạng rỡ, dịu dàng và được yêu thương thật nhiều. Chạm vào bó hoa để mở món quà bí mật nhé!</p>
+
+    <section class="gift-area" aria-label="Bó hoa tặng ngày 20 tháng 10">
+      <div class="halo halo-one"></div><div class="halo halo-two"></div>
+      <button class="bouquet-button" id="bouquet" aria-label="Bấm để mở món quà bí mật" aria-pressed="false">
+        <img class="bouquet bouquet-photo" src="Gemini_Generated_Image_ulqczrulqczrulqc-removebg-preview.png" alt="Bó hoa sáp hồng phấn, trắng và kem" draggable="false">
+        <span class="photo-pin" id="photoPin" aria-hidden="true"></span>
+      </button>
+      <div class="tiny-note">Chạm vào hoa <span>♡</span></div>
+    </section>
+
+    <div class="controls">
+      <p class="hint" id="hint">Chạm vào bó hoa để mở món quà ẩn bên trong.</p>
+    </div>
+    <footer><span>Gửi bằng cả sự trân quý</span><b>20 · 10</b></footer>
+  </main>
+
+  <dialog class="wish-dialog" id="wishDialog" aria-labelledby="wishTitle">
+    <button class="wish-dialog-close" id="wishClose" type="button" aria-label="Đóng thiệp">×</button>
+    <div class="wish-letter-ornament" aria-hidden="true">☾ <span>✦</span></div>
+    <p class="wish-dialog-kicker">LỜI NHẮN NGÀY 20 · 10</p>
+    <h2 id="wishTitle">Gửi đến cô em Thu Hà,</h2>
+ <div class="wish-letter-body">
+  <p>Nhân ngày 20/10 — Ngày Phụ nữ Việt Nam — anh muốn gửi đến em gái nhỏ những lời chúc tốt đẹp và chân thành nhất.</p>
+  <p>Chúc em luôn xinh đẹp, vui vẻ, bình an và luôn tràn ngập niềm vui. Cảm ơn em vì đã luôn là một người em gái ngoan ngoãn, chịu khó đi tìm hàng cho anh.</p>
+  <p>Mong những điều tốt đẹp nhất sẽ luôn tìm đến với em. Hãy luôn rạng rỡ, tự tin và vững bước trên con đường mình đã chọn nhé!</p>
+</div>
+    <p class="wish-letter-signature">Vua trốn tìm!<strong>Thu Hà ♡</strong></p>
+    <span class="wish-letter-flower" aria-hidden="true">✿</span>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
